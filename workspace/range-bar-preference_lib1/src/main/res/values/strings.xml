@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Range Bar Preference</string>
+    <string name="errors.must_be_between">Must be between</string>
+    <string name="errors.and">And</string>
+    <string name="enter_custom_value">Enter custom value</string>
+    <string name="apply">apply</string>
+    <string name="compass_logo_description">compass logo</string>
+    <string name="less_than_or_equal_to">≤</string>
+</resources>

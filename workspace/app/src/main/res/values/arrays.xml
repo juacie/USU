@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_text_array">
+        <item>123</item>
+        <item>EN</item>
+        <item>#*/</item>
+    </string-array>
+    <string-array name="chart_text_array">
+        <item>Scanner Type</item>
+        <item>Un-pair</item>
+        <item>Factory Default</item>
+    </string-array>
+</resources>

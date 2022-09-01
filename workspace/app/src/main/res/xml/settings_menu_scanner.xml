@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Symbology Settings"
+        android:icon="@drawable/menu_flag">
+    <Preference
+        android:title="@string/config_UpcEanJan"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Upc_ean_jan" />
+    <Preference
+        android:title="@string/config_Code128"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Code_128" />
+    <Preference
+        android:title="@string/config_Code39"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Code_39" />
+    <Preference
+        android:title="@string/config_Code93"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Code_93" />
+    <Preference
+        android:title="@string/config_Code11"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Code_11" />
+    <Preference
+        android:title="@string/config_Interleaved_2_of_5"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Interleaved_2_of_5" />
+    <Preference
+        android:title="@string/config_Discrete_2_of_5"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Discrete2of5" />
+    <Preference
+        android:title="@string/config_Codabar"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Codabar" />
+    <Preference
+        android:title="@string/config_MSI"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.MSI" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Chinese_2_of_5"
+        app:useSimpleSummaryProvider="true"
+        android:summary="%s"
+        android:title="@string/config_Chinese_2_of_5" />
+    <Preference
+        android:title="@string/config_Matrix_2_of_5"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Matrix_2_of_5" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_Inverse_1D_titles"
+        android:entryValues="@array/pref_Inverse_1D_values"
+        android:key="@string/setting_Inverse_1D"
+        app:useSimpleSummaryProvider="true"
+        android:summary="%s"
+        android:title="@string/config_Inverse_1D" />
+    <Preference
+        android:title="@string/config_GS1_DataBar"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.GS1_DataBar" />
+    <Preference
+        android:title="@string/config_Composite"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Composite" />
+    <Preference
+        android:title="@string/config_TwoD"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.TwoD_Symbologies" />
+    <Preference
+        android:title="@string/config_PostalCodes"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.PostalCodes" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/config_OtherSettings"
+        android:icon="@drawable/menu_flag">
+    <Preference
+        android:title="@string/config_OtherSettings"
+        app:fragment="com.unitech.scanner.utility.ui.fragment.symbology.Others" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

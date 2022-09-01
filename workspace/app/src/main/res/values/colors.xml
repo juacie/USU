@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#005BAB</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#005BAB</color>
+    <color name="candidate_normal">#FF000000</color>
+    <color name="candidate_recommended">#FFE35900</color>
+    <color name="candidate_other">#ff808080</color>
+    <color name="candidate_background">#bbffffff</color>
+    <color name="main_green_stroke_color">#60bf04</color>
+    <color name="darkGreen">#009000</color>
+    <color name="textColorPrimary">#666666</color>
+    <color name="textColorSecondary">#A6A6A6</color>
+
+    <!--Android-->
+    <color name="android_black">#ff000000</color>
+    <color name="android_white">#ffffffff</color>
+
+    <!--unitech-->
+    <color name="unitech_blue">#005BAB</color>
+    <color name="unitech_red">#ED1C24</color>
+    <color name="unitech_dark_blue">#00ADEF</color>
+    <color name="unitech_light_blue">#B9E0F7</color>
+    <color name="unitech_gold">#A39161</color>
+    <color name="unitech_silver">#A7A9AC</color>
+    <color name="unitech_gray">#5B6F7B</color>
+
+
+    <!--keyboard-->
+    <color name="keyboard_press_background">#F3E2A3</color>
+    <color name="keyboard_press_inside_background">#E8D34A</color>
+    <color name="keyboard_shadow">#00ffffff</color>
+
+    <color name="keyboard_tab_normal_background">#5B6F7B</color>
+    <color name="keyboard_normal_background">#00ADEF</color>
+    <color name="keyboard_normal_inside_background">#005BAB</color>
+
+    <color name="keyboard_key_color">#ffffffff</color>
+    <color name="keyboard_tab_color">#ffffffff</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Code_128"
+        android:title="@string/config_Code128"
+        android:summary="%s"
+        app:useSimpleSummaryProvider="true"/>
+    <EditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_setting_two_integer"
+        android:dialogMessage="@string/dialogMsg_setting_length"
+        android:defaultValue="0"
+        android:key="@string/setting_Code_128_Length_Parameter209"
+        android:title="@string/config_Code_128_Length_Parameter209" />
+    <EditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_setting_two_integer"
+        android:dialogMessage="@string/dialogMsg_setting_length"
+        android:defaultValue="0"
+        android:key="@string/setting_Code_128_Length_Parameter210"
+        android:title="@string/config_Code_128_Length_Parameter210" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_GS_1_128"
+        android:title="@string/config_GS_1_128"
+        android:summary="%s"
+        app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_ISBT_128"
+        android:title="@string/config_ISBT_128"
+        android:summary="%s"
+        app:useSimpleSummaryProvider="true"/>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Non focused states -->
+    <item  android:state_focused="false"  android:state_checked="false"  android:state_pressed="false" android:state_selected="false" >
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/keyboard_tab_normal_background" />
+                </shape>
+            </item>
+            <item
+                android:bottom="10dp"
+                android:top="10dp">
+                <shape>
+                    <solid android:color="@color/keyboard_tab_color" />
+                </shape>
+            </item>
+            <item android:left="1dp">
+                <shape>
+                    <solid android:color="@color/keyboard_tab_normal_background" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/menu_scanner_info" android:width="24dp" android:height="24dp" android:gravity="center"/>
+
+        </layer-list>
+    </item>
+
+    <!-- Pressed state -->
+    <item  android:state_checked="true" >
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/keyboard_normal_background" />
+                </shape>
+            </item>
+            <item
+                android:bottom="10dp"
+                android:top="10dp">
+                <shape>
+                    <solid android:color="@color/keyboard_tab_color" />
+                </shape>
+            </item>
+            <item android:right="1dp">
+                <shape>
+                    <solid android:color="@color/keyboard_normal_background" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/menu_scanner_info" android:width="24dp" android:height="24dp" android:gravity="center"/>
+
+        </layer-list>
+    </item>
+</selector>
+

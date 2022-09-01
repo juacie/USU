@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_PDF417"
+        android:title="@string/config_PDF417"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_MicroPDF417"
+        android:title="@string/config_MicroPDF417"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Code_128_Emulation"
+        android:title="@string/config_Code_128_Emulation"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Data_Matrix"
+        android:title="@string/config_Data_Matrix"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/pref_Data_Matrix_Inverse_titles"
+        android:entryValues="@array/pref_Data_Matrix_Inverse_values"
+        android:key="@string/setting_Data_Matrix_Inverse"
+        android:title="@string/config_Data_Matrix_Inverse"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Maxicode"
+        android:title="@string/config_Maxicode"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_QR_Code"
+        android:title="@string/config_QR_Code"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_MicroQR"
+        android:title="@string/config_MicroQR"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+    android:defaultValue="1"
+    android:entries="@array/pref_enable_disable_titles"
+    android:entryValues="@array/pref_enable_disable_values"
+    android:key="@string/setting_Aztec"
+    android:title="@string/config_Aztec"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/pref_Aztec_Inverse_titles"
+        android:entryValues="@array/pref_Aztec_Inverse_values"
+        android:key="@string/setting_Aztec_Inverse"
+        android:title="@string/config_Aztec_Inverse"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Han_Xin"
+        android:title="@string/config_Han_Xin"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_Han_Xin_Inverse_titles"
+        android:entryValues="@array/pref_Han_Xin_Inverse_values"
+        android:key="@string/setting_Han_Xin_Inverse"
+        android:title="@string/setting_Han_Xin_Inverse"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+</androidx.preference.PreferenceScreen>

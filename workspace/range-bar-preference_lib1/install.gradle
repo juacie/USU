@@ -1,0 +1,41 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = GROUPID
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                name ARTIFACTID
+                description 'A range bar that can be used as an android shared preference'
+                url GITREPO
+                inceptionYear '2017'
+
+                packaging 'aar'
+                groupId GROUPID
+                artifactId ARTIFACTID
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        distribution 'repo'
+                    }
+                }
+                scm {
+                    connection GITREPO
+                    developerConnection GITREPO
+                    url PROJECTURL
+
+                }
+                developers {
+                    developer {
+                        id 'nfxDevelopment'
+                        name 'Nicholas Winder'
+                        email 'nfxdevelopmeny@gmail.com'
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_US_Postnet"
+        android:title="@string/config_US_Postnet"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_US_Planet"
+        android:title="@string/config_US_Planet"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Transmit_US_Postal_Check_Digit"
+        android:title="@string/config_Transmit_US_Postal_Check_Digit"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_UK_Postal"
+        android:title="@string/config_UK_Postal"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Transmit_UK_Postal_Check_Digit"
+        android:title="@string/config_Transmit_UK_Postal_Check_Digit"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Japan_Postal"
+        android:title="@string/config_Japan_Postal"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Australian_Postal"
+        android:title="@string/config_Australian_Postal"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Netherlands_KIX_Code"
+        android:title="@string/config_Netherlands_KIX_Code"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_USPS_4CB_One_Code_Intelligent_Mail"
+        android:title="@string/config_USPS_4CB_One_Code_Intelligent_Mail"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_UPU_FICS_Postal"
+        android:title="@string/config_UPU_FICS_Postal"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+</androidx.preference.PreferenceScreen>

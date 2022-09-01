@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Interleaved_2_of_5"
+        android:title="@string/config_Interleaved_2_of_5"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <EditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_setting_two_integer"
+        android:dialogMessage="@string/dialogMsg_setting_length"
+        android:defaultValue="14"
+        android:key="@string/setting_Interleaved_2_of_5_Length_Parameter22"
+        android:title="@string/config_Interleaved_2_of_5_Length_Parameter22" />
+    <EditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_setting_two_integer"
+        android:dialogMessage="@string/dialogMsg_setting_length"
+        android:defaultValue="0"
+        android:key="@string/setting_Interleaved_2_of_5_Length_Parameter23"
+        android:title="@string/config_Interleaved_2_of_5_Length_Parameter23" />
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_I_2_of_5_Check_Digit_Verification_titles"
+        android:entryValues="@array/pref_I_2_of_5_Check_Digit_Verification_values"
+        android:key="@string/setting_Interleaved_2_of_5_Check_Digit_Verification"
+        android:title="@string/config_Interleaved_2_of_5_Check_Digit_Verification"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Transmit_Interleaved_2_of_5_Check_Digit"
+        android:title="@string/config_Transmit_Interleaved_2_of_5_Check_Digit"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Convert_Interleaved_2_of_5_to_EAN_13"
+        android:title="@string/config_Convert_Interleaved_2_of_5_to_EAN_13"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+</androidx.preference.PreferenceScreen>

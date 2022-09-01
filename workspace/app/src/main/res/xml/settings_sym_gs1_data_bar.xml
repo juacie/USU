@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_GS1_DataBar"
+        android:title="@string/config_GS1_DataBar"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_GS1_DataBar_Limited"
+        android:title="@string/config_GS1_DataBar_Limited"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_GS1_DataBar_Expanded"
+        android:title="@string/config_GS1_DataBar_Expanded"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Convert_GS1_DataBar_to_UPC_EAN"
+        android:title="@string/config_Convert_GS1_DataBar_to_UPC_EAN"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+</androidx.preference.PreferenceScreen>

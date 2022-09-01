@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+    <dimen name="candidate_font_height">16sp</dimen>
+    <dimen name="candidate_vertical_padding">6sp</dimen>
+    <dimen name="keyboard_height">45dip</dimen>
+    <dimen name="keyboard_height_landscape">30dip</dimen>
+    <dimen name="keyboard_vertical_gap">0dp</dimen>
+    <dimen name="keyboard_horizontal_gap">0px</dimen>
+    <dimen name="keyboard_bottom_view_height">48dp</dimen>
+    <dimen name="keyboard_key_text_size">24sp</dimen>
+    <dimen name="keyboard_tab_text_size">18sp</dimen>
+    <dimen name="alert_def_padding">18dp</dimen>
+</resources>

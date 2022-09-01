@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Code_39"
+        android:title="@string/config_Code39"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Trioptic_Code_39"
+        android:title="@string/config_Trioptic_Code_39"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Convert_Code_39_to_Code_32"
+        android:title="@string/config_Convert_Code_39_to_Code_32"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Code_32_Prefix"
+        android:title="@string/config_Code_32_Prefix"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <EditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_setting_two_integer"
+        android:dialogMessage="@string/dialogMsg_setting_length"
+        android:defaultValue="2"
+        android:key="@string/setting_Code_39_Length_Parameter18"
+        android:title="@string/config_Code_39_Length_Parameter18" />
+    <EditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_setting_two_integer"
+        android:dialogMessage="@string/dialogMsg_setting_length"
+        android:defaultValue="55"
+        android:key="@string/setting_Code_39_Length_Parameter19"
+        android:title="@string/config_Code_39_Length_Parameter19" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Code_39_Check_Digit_Verification"
+        android:title="@string/config_Code_39_Check_Digit_Verification"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Transmit_Code_39_Check_Digit"
+        android:title="@string/config_Transmit_Code_39_Check_Digit"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="@string/setting_Code_39_Full_ASCII_Conversion"
+        android:title="@string/config_Code_39_Full_ASCII_Conversion"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+</androidx.preference.PreferenceScreen>

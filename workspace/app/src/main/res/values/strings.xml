@@ -1,0 +1,803 @@
+<resources>
+    <!--App Name-->
+    <string name="app_name">Unitech Scanner Utility</string>
+
+    <!--MainFragment-->
+    <string name="text_mobile_bt_address">Mobile BT address is </string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="scan_barcode_to_start_pairing">Scan the barcode to start pairing the scanner.</string>
+    <string name="localInfo">MobileInfo</string>
+    <string name="floatingInfo">FloatingInfo</string>
+    <string name="default_floatingview_channel_id">Floating Button</string>
+    <string name="floating_notification_title">Floating Button</string>
+    <string name="floating_notification_content">Floating Button Content</string>
+    <string name="enter_bluetooth_mac_address">Enter bluetooth mac address</string>
+
+    <!--DefaultValue-->
+    <string name="defaultBtAddress">02:00:00:00:00:00</string>
+    <string name="defaultIntentAction">USU_INTENT_DATA_ACTION</string>
+    <string name="defaultIntentData">data</string>
+    <string name="defaultIntentDataType">datatype</string>
+    <string name="defaultIntentDataByte">databyte</string>
+    <string name="defaultIntentDataLength">datalength</string>
+
+    <!--Menu-->
+    <string name="menu_Home">Home</string>
+    <string name="menu_FindScanner">Find Scanner</string>
+    <string name="menu_DataTesting">Scan Test</string>
+    <string name="menu_ScannerConfig">Scanner Configurations</string>
+    <string name="menu_AppSettings">Application Settings</string>
+    <string name="menu_LabelFormatting">Label Formatting</string>
+    <string name="menu_ResetAll">Reset All Settings</string>
+    <string name="menu_QuickChart">Quick Settings Chart</string>
+    <string name="menu_About">Application Information</string>
+    <string name="menu_Exit">Exit</string>
+    <string name="menu_Download">Download the Settings</string>
+    <string name="menu_Upload">Upload the Settings</string>
+    <string name="menu_Export">Export the Settings</string>
+    <string name="menu_Import">Import the Settings</string>
+
+    <!--DeviceFragment-->
+    <string name="connectedDevice">Connected Scanner:</string>
+    <string name="target_scanner_sn">Target Scanner SN:</string>
+    <string name="target_scanner_status">Target Scanner Status:</string>
+    <string name="scanner_name">Name</string>
+    <string name="scanner_sn">Serial Number</string>
+    <string name="scanner_bt_mac">Bluetooth</string>
+    <string name="battery_status">Battery Status</string>
+    <string name="fw_version">Firmware Version</string>
+    <string name="scan_testing">Scan Testing:</string>
+    <string name="scan">Scan</string>
+    <string name="n_a">N/A</string>
+    <string name="disconnect_device">Disconnect Scanner</string>
+
+    <!--DialogMessage-->
+    <string name="InputBtAddressTitle"><![CDATA[(STEP 1)\nNavigate to \"Settings > System > About > (Status)>Bluetooth Address\" or click here.\n(STEP 2)\nWrite down the Bluetooth address.\n(Step 3)\nHit back button until return to this screen.\n\nType address below:]]></string>
+    <string name="dialogMsg_setting_length">input 0 to 55</string>
+    <string name="dialog_replace_target">Find</string>
+    <string name="dialog_replace_value">Replacement</string>
+
+
+
+    <!--ScannerConfig-->
+    <string name="config_SymbologySettings">Symbology Settings</string>
+    <string name="config_UpcEanJan">UPC/EAN/JAN</string>
+    <string name="config_Code128">Code 128</string>
+    <string name="config_Code39">Code 39</string>
+    <string name="config_Code93">Code 93</string>
+    <string name="config_Code11">Code 11</string>
+    <string name="config_Interleaved_2_of_5">Interleaved 2 of 5</string>
+    <string name="config_Discrete_2_of_5">Discrete 2 of 5</string>
+    <string name="config_Codabar">Codabar</string>
+    <string name="config_MSI">MSI</string>
+    <string name="config_Chinese_2_of_5" translatable="false">Chinese 2 of 5</string>
+    <string name="config_Matrix_2_of_5">Matrix 2 of 5</string>
+    <string name="config_Inverse_1D" translatable="false">Inverse 1D</string>
+    <string name="config_GS1_DataBar">GS1 DataBar</string>
+    <string name="config_Composite">Composite</string>
+    <string name="config_TwoD">2D Symbologies</string>
+    <string name="config_PostalCodes">Postal Codes</string>
+    <string name="config_OtherSettings">Other Settings</string>
+    <!--config_UpcEanJan-->
+    <string name="config_UPC_A">UPC-A</string>
+    <string name="config_UPC_E">UPC-E</string>
+    <string name="config_UPC_E1">UPC-E1</string>
+    <string name="config_EAN_8">EAN-8/JAN-8</string>
+    <string name="config_EAN_13">EAN-13/JAN-13</string>
+    <string name="config_Bookland_EAN">Bookland EAN</string>
+    <string name="config_Bookland_ISBN_Format">Bookland ISBN Format</string>
+    <string name="config_ISSN_EAN">ISSN EAN</string>
+    <string name="config_Decode_UPC_EAN_JAN_Supplementals">Decode UPC/EAN/JAN Supplementals</string>
+    <string name="config_Transmit_UPC_A_Check_Digit">Transmit UPC-A Check Digit</string>
+    <string name="config_Transmit_UPC_E_Check_Digit">Transmit UPC-E Check Digit</string>
+    <string name="config_Transmit_UPC_E1_Check_Digit">Transmit UPC-E1 Check Digit</string>
+    <string name="config_UPC_A_Preamble">UPC-A Preamble</string>
+    <string name="config_UPC_E_Preamble">UPC-E Preamble</string>
+    <string name="config_UPC_E1_Preamble">UPC-E1 Preamble</string>
+    <string name="config_Convert_UPC_E_to_A">Convert UPC-E to UPC-A</string>
+    <string name="config_Convert_UPC_E1_to_A">Convert UPC-E1 to UPC-A</string>
+    <string name="config_EAN_8_JAN_8_Extend">EAN-8/JAN-8 Extend</string>
+    <string name="config_UCC_Coupon_Extended_Code">UCC Coupon Extended Code</string>
+    <!--config_Code128-->
+    <string name="config_Code_128_Length_Parameter209">Code 128 Length Parameter 1</string>
+    <string name="config_Code_128_Length_Parameter210">Code 128 Length Parameter 2</string>
+    <string name="config_GS_1_128">GS1–128</string>
+    <string name="config_ISBT_128">ISBT 128</string>
+    <!--config_Code39-->
+    <string name="config_Trioptic_Code_39">Trioptic Code 39</string>
+    <string name="config_Convert_Code_39_to_Code_32">Convert Code 39 to Code 32</string>
+    <string name="config_Code_32_Prefix">Code 32 Prefix</string>
+    <string name="config_Code_39_Length_Parameter18">Code 39 Length Parameter 1</string>
+    <string name="config_Code_39_Length_Parameter19">Code 39 Length Parameter 2</string>
+    <string name="config_Code_39_Check_Digit_Verification">Code 39 Check Digit Verification</string>
+    <string name="config_Transmit_Code_39_Check_Digit">Transmit Code 39 Check Digit</string>
+    <string name="config_Code_39_Full_ASCII_Conversion">Code 39 Full ASCII Conversion</string>
+    <!--config_Code93-->
+    <string name="config_Code_93_Length_Parameter26">Code 93 Length Parameter 1</string>
+    <string name="config_Code_93_Length_Parameter27">Code 93 Length Parameter 2</string>
+    <!--config_Code11-->
+    <string name="config_Code_11_Length_Parameter28">Code 11 Length Parameter 1</string>
+    <string name="config_Code_11_Length_Parameter29">Code 11 Length Parameter 2</string>
+    <string name="config_Code_11_Check_Digit_Verification">Code 11 Check Digit Verification</string>
+    <string name="config_Transmit_Code_11_Check_Digit">Transmit Code 11 Check Digit</string>
+    <!--config_Interleaved_2_of_5-->
+    <string name="config_Interleaved_2_of_5_Length_Parameter22">Interleaved 2 of 5 Length Parameter 1</string>
+    <string name="config_Interleaved_2_of_5_Length_Parameter23">Interleaved 2 of 5 Length Parameter 2</string>
+    <string name="config_Interleaved_2_of_5_Check_Digit_Verification">Interleaved 2 of 5 Check Digit Verification</string>
+    <string name="config_Transmit_Interleaved_2_of_5_Check_Digit">Transmit Interleaved 2 of 5 Check Digit</string>
+    <string name="config_Convert_Interleaved_2_of_5_to_EAN_13">Convert I 2 of 5 to EAN-13</string>
+    <!--config_Discrete_2_of_5-->
+    <string name="config_Discrete_2_of_5_Length_Parameter20">Discrete 2 of 5 Length Parameter 1</string>
+    <string name="config_Discrete_2_of_5_Length_Parameter21">Discrete 2 of 5 Length Parameter 2</string>
+    <!--config_Codabar-->
+    <string name="config_Codabar_Length_Parameter24">Codabar Length Parameter 1</string>
+    <string name="config_Codabar_Length_Parameter25">Codabar Length Parameter 2</string>
+    <string name="config_CLSI_Editing">CLSI Editing</string>
+    <string name="config_NOTIS_Editing">NOTIS Editing</string>
+    <!--config_Config-->
+    <string name="config_MSI_Length_Parameter30">MSI Length Parameter 1</string>
+    <string name="config_MSI_Length_Parameter31">MSI Length Parameter 2</string>
+    <string name="config_MSI_Check_Digit">MSI Check Digit</string>
+    <string name="config_Transmit_MSI_Check_Digit">Transmit MSI Check Digit</string>
+    <string name="config_MSI_Check_Digit_Algorithm">MSI Check Digit Algorithm</string>
+    <!--config_Matrix_2_of_5-->
+    <string name="config_Matrix_2_of_5_Length_Parameter619">Matrix 2 of 5 Length Parameter 1</string>
+    <string name="config_Matrix_2_of_5_Length_Parameter620">Matrix 2 of 5 Length Parameter 2</string>
+    <string name="config_Matrix_2_of_5_Check_Digit">Matrix 2 of 5 Check Digit</string>
+    <string name="config_Transmit_Matrix_2_of_5_Check_Digit">Transmit Matrix 2 of 5 Check Digit</string>
+    <!--config_GS1_DataBar-->
+    <string name="config_GS1_DataBar_Limited">GS1 DataBar Limited</string>
+    <string name="config_GS1_DataBar_Expanded">GS1 DataBar Expanded</string>
+    <string name="config_Convert_GS1_DataBar_to_UPC_EAN">Convert GS1 DataBar to UPC/EAN</string>
+    <!--config_Composite-->
+    <string name="config_Composite_CC_C">Composite CC-C</string>
+    <string name="config_Composite_CC_A_B">Composite CC-A/B</string>
+    <string name="config_Composite_TLC_39">Composite TLC-39</string>
+    <string name="config_UPC_Composite_Mode">UPC Composite Mode</string>
+    <!--config_TwoD-->
+    <string name="config_PDF417">PDF417</string>
+    <string name="config_MicroPDF417">MicroPDF417</string>
+    <string name="config_Code_128_Emulation">Code 128 Emulation</string>
+    <string name="config_Data_Matrix">Data Matrix</string>
+    <string name="config_Data_Matrix_Inverse">Data Matrix Inverse</string>
+    <string name="config_Maxicode">Maxicode</string>
+    <string name="config_QR_Code">QR Code</string>
+    <string name="config_MicroQR">MicroQR</string>
+    <string name="config_Aztec">Aztec</string>
+    <string name="config_Aztec_Inverse">Aztec Inverse</string>
+    <string name="config_Han_Xin">Han Xin</string>
+    <string name="config_Han_Xin_Inverse">Han Xin Inverse</string>
+    <!--config_PostalCodes-->
+    <string name="config_US_Postnet">US Postnet</string>
+    <string name="config_US_Planet">US Planet</string>
+    <string name="config_Transmit_US_Postal_Check_Digit">Transmit US Postal Check Digit</string>
+    <string name="config_UK_Postal">UK Postal</string>
+    <string name="config_Transmit_UK_Postal_Check_Digit">Transmit UK Postal Check Digit</string>
+    <string name="config_Japan_Postal">Japan Postal</string>
+    <string name="config_Australian_Postal">Australia Post</string>
+    <string name="config_Netherlands_KIX_Code">Netherlands KIX Code</string>
+    <string name="config_USPS_4CB_One_Code_Intelligent_Mail">USPS 4CB/One Code/Intelligent Mail</string>
+    <string name="config_UPU_FICS_Postal">UPU FICS Postal</string>
+    <!--config_OtherSettings-->
+    <string name="config_Trigger_Settings">Trigger Settings</string>
+    <string name="config_Picklist_Mode">Pick list mode</string>
+    <string name="config_Trigger_Modes">Trigger Modes</string>
+    <string name="config_Decode_Session_Timeout">Decode Session Timeout</string>
+    <string name="config_Security_Level">Security Level</string>
+    <string name="config_Exposure_Settings">Exposure Settings</string>
+    <string name="config_Decode_Aiming_Pattern">Decode Aiming Pattern</string>
+    <string name="config_Decoding_Illumination">Decoding Illumination</string>
+    <string name="config_Exposure_Mode">Exposure Mode</string>
+    <string name="config_Fixed_Exposure_Time">Fixed Exposure Time</string>
+    <string name="config_Low_Light_Motion_Detection_Assist">Low Light Motion Detection Assist</string>
+    <string name="config_Transmit_Code_ID_Character">Transmit Code ID Character</string>
+    <string name="config_Transmit_No_Read_Message">Transmit No Read Message</string>
+    <string name="config_BT_signal_checking_level">BT Signal Checking Level</string>
+    <string name="config_Data_terminator">Data Terminator</string>
+
+    <!--AppSettings-->
+    <string name="config_Password">Password</string>
+    <string name="config_ChangeBtAddress">Change Mobile Bluetooth Address</string>
+    <string name="config_StartUp">Start Up</string>
+    <string name="config_AutoUploadSettings">Auto Enforce Settings</string>
+    <string name="config_FloatingButton">Floating UI Button</string>
+    <string name="config_LaunchApp">Launch application after connection</string>
+    <string name="config_ReceiveDataSettings">Mobile Receive Data Settings</string>
+    <string name="config_Scan2Key">Scan to Key Service</string>
+    <string name="config_Clipboard">Save Data To Clipboard</string>
+    <string name="config_OutputMethod">Output Method</string>
+    <string name="config_InterCharTime">Each Charter Delay Time (ms)</string>
+    <string name="config_Sound">Sound</string>
+    <string name="config_Frequency">Frequency</string>
+    <string name="config_SoundDuration">Sound Duration</string>
+    <string name="config_Vibration">Vibration</string>
+    <string name="config_DataAckSettings">Data Ack Settings</string>
+    <string name="config_DataAckWithIndicator">Data Ack with indicator</string>
+    <string name="config_IndicatorLed">Indicator(LED)</string>
+    <string name="config_IndicatorVibrator">Indicator(Vibrator)</string>
+    <string name="config_IndicatorBeep">Indicator(Beeper times)</string>
+    <string name="config_DataIntentSettings">Data Intent Settings</string>
+    <string name="config_DataAction">Intent Action</string>
+    <string name="config_StringData">Extra Data Key</string>
+    <string name="config_StringDataType">Extra DataType Key</string>
+    <string name="config_StringDataLength">Extra DataLength Key</string>
+    <string name="config_StringDataByte">Extra DataByte Key</string>
+    <string name="config_EnableDataIntent">Enable Intent Extra</string>
+    <string name="config_EnableDataType">Integer Value DataType</string>
+    <string name="config_EnableDataLength">Integer Value DataLength</string>
+    <string name="config_EnableDataByte">ByteArray Value DataBytes</string>
+
+    <!--LabelFormatting-->
+    <string name="config_Encoding">Encoding</string>
+    <string name="config_DataEditing">Data Editing</string>
+    <string name="config_RemoveNonPrintableChar">Remove Non-Printable Character</string>
+    <string name="config_UseFormatting">Use Formatting</string>
+    <string name="config_Replace">Replace</string>
+    <string name="config_Prefix">Prefix</string>
+    <string name="config_Suffix">Suffix</string>
+    <string name="config_Replace_dialog_msg">Please enter replacement data. Support &#60;LF&#62;,&#60;CR&#62;,&#60;TAB&#62;.</string>
+    <string name="config_Prefix_dialog_msg">Please enter the prefix of the data to be added. Support &#60;LF&#62;,&#60;CR&#62;,&#60;TAB&#62;.</string>
+    <string name="config_Suffix_dialog_msg">Please enter the suffix of the data to be added. Support &#60;LF&#62;,&#60;CR&#62;,&#60;TAB&#62;.</string>
+
+    <string name="config_Terminator">Terminator</string>
+    <string name="config_Formatting">Formatting</string>
+    <string name="config_Type">Type</string>
+    <string name="config_Rule">Rule</string>
+
+    <!--keys-->
+    <!--keys_ScannerConfig-->
+    <string name="setting_Chinese_2_of_5" translatable="false">Chinese 2 of 5</string>
+    <string name="setting_Inverse_1D" translatable="false">Inverse 1D</string>
+    <!--keys_UpcEanJan-->
+    <string name="setting_UPC_A">UPC-A</string>
+    <string name="setting_UPC_E">UPC-E</string>
+    <string name="setting_UPC_E1">UPC-E1</string>
+    <string name="setting_EAN_8">EAN-8/JAN-8</string>
+    <string name="setting_EAN_13">EAN-13/JAN-13</string>
+    <string name="setting_Bookland_EAN">Bookland EAN</string>
+    <string name="setting_Bookland_ISBN_Format">Bookland ISBN Format</string>
+    <string name="setting_ISSN_EAN">ISSN EAN</string>
+    <string name="setting_Decode_UPC_EAN_JAN_Supplementals">Decode UPC/EAN/JAN Supplementals</string>
+    <string name="setting_Transmit_UPC_A_Check_Digit">Transmit UPC-A Check Digit</string>
+    <string name="setting_Transmit_UPC_E_Check_Digit">Transmit UPC-E Check Digit</string>
+    <string name="setting_Transmit_UPC_E1_Check_Digit">Transmit UPC-E1 Check Digit</string>
+    <string name="setting_UPC_A_Preamble">UPC-A Preamble</string>
+    <string name="setting_UPC_E_Preamble">UPC-E Preamble</string>
+    <string name="setting_UPC_E1_Preamble">UPC-E1 Preamble</string>
+    <string name="setting_Convert_UPC_E_to_A">Convert UPC-E to UPC-A</string>
+    <string name="setting_Convert_UPC_E1_to_A">Convert UPC-E1 to UPC-A</string>
+    <string name="setting_EAN_8_JAN_8_Extend">EAN-8/JAN-8 Extend</string>
+    <string name="setting_UCC_Coupon_Extended_Code">UCC Coupon Extended Code</string>
+    <!--keys_Code128-->
+    <string name="setting_Code_128">Code 128</string>
+    <string name="setting_Code_128_Length_Parameter209">Code 128 Length Parameter 1</string>
+    <string name="setting_Code_128_Length_Parameter210">Code 128 Length Parameter 2</string>
+    <string name="setting_GS_1_128">GS1–128</string>
+    <string name="setting_ISBT_128">ISBT 128</string>
+    <!--keys_Code39-->
+    <string name="setting_Code_39">Code 39</string>
+    <string name="setting_Trioptic_Code_39">Trioptic Code 39</string>
+    <string name="setting_Convert_Code_39_to_Code_32">Convert Code 39 to Code 32</string>
+    <string name="setting_Code_32_Prefix">Code 32 Prefix</string>
+    <string name="setting_Code_39_Length_Parameter18">Code 39 Length Parameter 1</string>
+    <string name="setting_Code_39_Length_Parameter19">Code 39 Length Parameter 2</string>
+    <string name="setting_Code_39_Check_Digit_Verification">Code 39 Check Digit Verification</string>
+    <string name="setting_Transmit_Code_39_Check_Digit">Transmit Code 39 Check Digit</string>
+    <string name="setting_Code_39_Full_ASCII_Conversion">Code 39 Full ASCII Conversion</string>
+    <!--keys_Code93-->
+    <string name="setting_Code_93">Code 93</string>
+    <string name="setting_Code_93_Length_Parameter26">Code 93 Length Parameter 1</string>
+    <string name="setting_Code_93_Length_Parameter27">Code 93 Length Parameter 2</string>
+    <!--keys_Code11-->
+    <string name="setting_Code_11">Code 11</string>
+    <string name="setting_Code_11_Length_Parameter28">Code 11 Length Parameter 1</string>
+    <string name="setting_Code_11_Length_Parameter29">Code 11 Length Parameter 2</string>
+    <string name="setting_Code_11_Check_Digit_Verification">Code 11 Check Digit Verification</string>
+    <string name="setting_Transmit_Code_11_Check_Digit">Transmit Code 11 Check Digit</string>
+    <!--keys_Interleaved_2_of_5-->
+    <string name="setting_Interleaved_2_of_5">Interleaved 2 of 5</string>
+    <string name="setting_Interleaved_2_of_5_Length_Parameter22">Interleaved 2 of 5 Length Parameter 1</string>
+    <string name="setting_Interleaved_2_of_5_Length_Parameter23">Interleaved 2 of 5 Length Parameter 2</string>
+    <string name="setting_Interleaved_2_of_5_Check_Digit_Verification">Interleaved 2 of 5 Check Digit Verification</string>
+    <string name="setting_Transmit_Interleaved_2_of_5_Check_Digit">Transmit Interleaved 2 of 5 Check Digit</string>
+    <string name="setting_Convert_Interleaved_2_of_5_to_EAN_13">Convert I 2 of 5 to EAN-13</string>
+    <!--keys_Discrete_2_of_5-->
+    <string name="setting_Discrete_2_of_5">Discrete 2 of 5</string>
+    <string name="setting_Discrete_2_of_5_Length_Parameter20">Discrete 2 of 5 Length Parameter 1</string>
+    <string name="setting_Discrete_2_of_5_Length_Parameter21">Discrete 2 of 5 Length Parameter 2</string>
+    <!--keys_Codabar-->
+    <string name="setting_Codabar">Codabar</string>
+    <string name="setting_Codabar_Length_Parameter24">Codabar Length Parameter 1</string>
+    <string name="setting_Codabar_Length_Parameter25">Codabar Length Parameter 2</string>
+    <string name="setting_CLSI_Editing">CLSI Editing</string>
+    <string name="setting_NOTIS_Editing">NOTIS Editing</string>
+    <!--keys_MSI-->
+    <string name="setting_MSI">MSI</string>
+    <string name="setting_MSI_Length_Parameter30">MSI Length Parameter 1</string>
+    <string name="setting_MSI_Length_Parameter31">MSI Length Parameter 2</string>
+    <string name="setting_MSI_Check_Digit">MSI Check Digit</string>
+    <string name="setting_Transmit_MSI_Check_Digit">Transmit MSI Check Digit</string>
+    <string name="setting_MSI_Check_Digit_Algorithm">MSI Check Digit Algorithm</string>
+    <!--keys_Matrix_2_of_5-->
+    <string name="setting_Matrix_2_of_5">Matrix 2 of 5</string>
+    <string name="setting_Matrix_2_of_5_Length_Parameter619">Matrix 2 of 5 Length Parameter 1</string>
+    <string name="setting_Matrix_2_of_5_Length_Parameter620">Matrix 2 of 5 Length Parameter 2</string>
+    <string name="setting_Matrix_2_of_5_Check_Digit">Matrix 2 of 5 Check Digit</string>
+    <string name="setting_Transmit_Matrix_2_of_5_Check_Digit">Transmit Matrix 2 of 5 Check Digit</string>
+    <!--keys_GS1_DataBar-->
+    <string name="setting_GS1_DataBar">GS1 DataBar</string>
+    <string name="setting_GS1_DataBar_Limited">GS1 DataBar Limited</string>
+    <string name="setting_GS1_DataBar_Expanded">GS1 DataBar Expanded</string>
+    <string name="setting_Convert_GS1_DataBar_to_UPC_EAN">Convert GS1 DataBar to UPC/EAN</string>
+    <!--keys_Composite-->
+    <string name="setting_Composite_CC_C">Composite CC-C</string>
+    <string name="setting_Composite_CC_A_B">Composite CC-A/B</string>
+    <string name="setting_Composite_TLC_39">Composite TLC-39</string>
+    <string name="setting_UPC_Composite_Mode">UPC Composite Mode</string>
+    <!--keys_TwoD-->
+    <string name="setting_PDF417">PDF417</string>
+    <string name="setting_MicroPDF417">MicroPDF417</string>
+    <string name="setting_Code_128_Emulation">Code 128 Emulation</string>
+    <string name="setting_Data_Matrix">Data Matrix</string>
+    <string name="setting_Data_Matrix_Inverse">Data Matrix Inverse</string>
+    <string name="setting_Maxicode">Maxicode</string>
+    <string name="setting_QR_Code">QR Code</string>
+    <string name="setting_MicroQR">MicroQR</string>
+    <string name="setting_Aztec">Aztec</string>
+    <string name="setting_Aztec_Inverse">Aztec Inverse</string>
+    <string name="setting_Han_Xin">Han Xin</string>
+    <string name="setting_Han_Xin_Inverse">Han Xin Inverse</string>
+    <!--keys_PostalCodes-->
+    <string name="setting_US_Postnet">US Postnet</string>
+    <string name="setting_US_Planet">US Planet</string>
+    <string name="setting_Transmit_US_Postal_Check_Digit">Transmit US Postal Check Digit</string>
+    <string name="setting_UK_Postal">UK Postal</string>
+    <string name="setting_Transmit_UK_Postal_Check_Digit">Transmit UK Postal Check Digit</string>
+    <string name="setting_Japan_Postal">Japan Postal</string>
+    <string name="setting_Australian_Postal">Australia Post</string>
+    <string name="setting_Netherlands_KIX_Code">Netherlands KIX Code</string>
+    <string name="setting_USPS_4CB_One_Code_Intelligent_Mail">USPS 4CB/One Code/Intelligent Mail</string>
+    <string name="setting_UPU_FICS_Postal">UPU FICS Postal</string>
+    <!--keys_OtherSettings-->
+    <string name="setting_Picklist_Mode">Pick list mode</string>
+    <string name="setting_Trigger_Modes">Trigger Modes</string>
+    <string name="setting_Decode_Session_Timeout">Decode Session Timeout</string>
+    <string name="setting_Security_Level">Security Level</string>
+    <string name="setting_Decode_Aiming_Pattern">Decode Aiming Pattern</string>
+    <string name="setting_Decoding_Illumination">Decoding Illumination</string>
+    <string name="setting_Exposure_Mode">Exposure Mode</string>
+    <string name="setting_Fixed_Exposure_Time">Fixed Exposure Time</string>
+    <string name="setting_Low_Light_Motion_Detection_Assist">Low Light Motion Detection Assist</string>
+    <string name="setting_Transmit_Code_ID_Character">Transmit Code ID Character</string>
+    <string name="setting_Transmit_No_Read_Message">Transmit No Read Message</string>
+    <string name="setting_BT_signal_checking_level">BT Signal Checking Level</string>
+    <string name="setting_Data_terminator">Data Terminator</string>
+    <!--AppSettings-->
+    <string name="setting_Password">pref_password</string>
+    <string name="setting_BtAddress">pref_btmac</string>
+    <string name="setting_StartUp">pref_startup</string>
+    <string name="setting_AutoEnforceSettings">pref_AutoEnforceSettings</string>
+    <string name="setting_FloatingButton">pref_FloatingButton</string>
+    <string name="setting_LaunchApp">pref_launch_app</string>
+    <string name="setting_Clipboard">pref_clipboard</string>
+    <string name="setting_Scan2key">pref_scan_to_key</string>
+    <string name="setting_OutputMethod">pref_output_method</string>
+    <string name="setting_InterCharTime">pref_interchar_time</string>
+    <string name="setting_Sound">pref_sound</string>
+    <string name="setting_Frequency">pref_sound_freq</string>
+    <string name="setting_SoundDuration">pref_sound_duration</string>
+    <string name="setting_Vibration">pref_vibration</string>
+    <string name="setting_DataAckWithIndicator">pref_DataAckWithIndicator</string>
+    <string name="setting_IndicatorLed">pref_led</string>
+    <string name="setting_IndicatorVibrator">pref_vibrator</string>
+    <string name="setting_IndicatorBeep">pref_beeper_times</string>
+    <string name="setting_DataAction">pref_data_action</string>
+    <string name="setting_StringData">pref_data</string>
+    <string name="setting_StringDataType">pref_data_type</string>
+    <string name="setting_StringDataLength">pref_data_length</string>
+    <string name="setting_StringDataByte">pref_data_byte</string>
+    <string name="setting_EnableDataIntent">pref_enable_data</string>
+<!--    <string name="setting_EnableDataType">pref_enable_data_type</string>-->
+<!--    <string name="setting_EnableDataLength">pref_enable_data_length</string>-->
+<!--    <string name="setting_EnableDataByte">pref_enable_data_byte</string>-->
+    <string name="setting_scanned_data_format">Scanned data format</string>
+    <!--keys_LabelFormatting-->
+    <string name="setting_Encoding">pref_encoding</string>
+    <string name="setting_RemoveNonPrintableChar">pref_removeNonPrintChar</string>
+    <string name="setting_UseFormatting">pref_useFormatting</string>
+    <string name="setting_Replace">pref_replace</string>
+    <string name="setting_Prefix">pref_prefix</string>
+    <string name="setting_Suffix">pref_suffix</string>
+    <string name="setting_Terminator">pref_terminator</string>
+    <string name="setting_Formatting">pref_formatting</string>
+
+    <!--About-->
+    <string name="version">Version =</string>
+    <string name="copyright">USU is a utility program that can convert scanned data into keyboard input through an external unitech scanner.\n\nCopyright© 2021 Unitech Electronics Co. Ltd. All Right Reserved.</string>
+
+    <!--Keyboard-->
+    <string name="label_go_key">Go</string>
+    <string name="label_next_key">Next</string>
+    <string name="label_send_key">Send</string>
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+    <string name="ime_name">Unitech SU Keyboard</string>
+    <!-- Titles for ImePreference -->
+    <string name="settings_name">Soft Keyboard Settings</string>
+    <string name="language_selection_title">Input languages</string>
+    <string name="select_language">Languages</string>
+    <string name="general_category">General</string>
+    <!-- Labels for subtype -->
+    <string name="label_subtype_generic">English</string>
+    <string name="label_subtype_en_GB">English (GB)</string>
+    <string name="label_subtype_ch_traditional">Chinese (Traditional)</string>
+
+    <string name="todo">TODO</string>
+    <string name="ps_lf_0x0a_tab_0x09"><![CDATA[Support<LF>,<TAB>]]></string>
+    <string name="_1d">[1D]</string>
+
+    <!--*****************************************************************************************-->
+    <string-array name="pref_enable_disable_titles">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+    <string-array name="pref_enable_disable_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_trigger_mode_titles">
+        <item>Pulse Mode</item>
+        <item>Continuous Mode</item>
+        <item>Host Mode</item>
+        <item>Auto Aim</item>
+        <item>Auto Aim with Illumination</item>
+    </string-array>
+    <string-array name="pref_trigger_mode_values">
+        <item>0</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="pref_picklist_mode_titles">
+        <item>Disabled Always</item>
+        <item>Enabled Always</item>
+    </string-array>
+    <string-array name="pref_picklist_mode_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_Transmit_Code_ID_Character_titles">
+        <item>Symbol Code ID Character</item>
+        <item>AIM Code ID Character</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="pref_Transmit_Code_ID_Character_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="pref_Low_Light_Scene_Detection_titles">
+        <item>Disable</item>
+        <item>Enable Aiming Dot</item>
+        <item>Enable Dim Illumination</item>
+    </string-array>
+    <string-array name="pref_Low_Light_Scene_Detection_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_Bookland_ISBN_Format_titles">
+        <item>Bookland ISBN-10</item>
+        <item>Bookland ISBN-13</item>
+    </string-array>
+    <string-array name="pref_Bookland_ISBN_Format_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_DecodeUPC_EAN_JAN_Supplementals_titles">
+        <item>Decode UPC/EAN/JAN Only With Supplementals</item>
+        <item>Ignore Supplementals</item>
+        <item>Autodiscriminate UPC/EAN/JAN Supplementals</item>
+        <item>Enable 378/379 Supplemental Mode</item>
+        <item>Enable 978/979 Supplemental Mode</item>
+        <item>Enable 977 Supplemental Mode</item>
+        <item>Enable 414/419/434/439 Supplemental Mode</item>
+        <item>Enable 491 Supplemental Mode</item>
+        <item>Enable Smart Supplemental Mode</item>
+    </string-array>
+    <string-array name="pref_DecodeUPC_EAN_JAN_Supplementals_values">
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>6</item>
+        <item>8</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_UPC_X_Preamble_titles">
+        <item>No Preamble ([DATA])</item>
+        <item>System Character ([SYSTEM CHARACTER][DATA])</item>
+        <item>System Character + Country Code ([COUNTRY CODE][SYSTEM CHARACTER][DATA])</item>
+    </string-array>
+    <string-array name="pref_UPC_X_Preamble_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_Code_11_Check_Digit_Verification_titles">
+        <item>Disable</item>
+        <item>One Check Digit</item>
+        <item>Two Check Digits</item>
+    </string-array>
+    <string-array name="pref_Code_11_Check_Digit_Verification_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_I_2_of_5_Check_Digit_Verification_titles">
+        <item>Disable</item>
+        <item>USS Check Digit</item>
+        <item>OPCC Check Digit</item>
+    </string-array>
+    <string-array name="pref_I_2_of_5_Check_Digit_Verification_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_MSI_Check_Digit_Algorithm_titles">
+        <item>MOD 11/MOD 10</item>
+        <item>MOD 10/MOD 10</item>
+    </string-array>
+    <string-array name="pref_MSI_Check_Digit_Algorithm_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_Inverse_1D_titles">
+        <item>Regular Only</item>
+        <item>Inverse Only</item>
+        <item>Inverse Autodetect</item>
+    </string-array>
+    <string-array name="pref_Inverse_1D_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_UPC_Composite_Mode_titles">
+        <item>UPC Never Linked</item>
+        <item>UPC Always Linked</item>
+        <item>Autodiscriminate UPC Composites</item>
+    </string-array>
+    <string-array name="pref_UPC_Composite_Mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_Data_Matrix_Inverse_titles">
+        <item>Regular</item>
+        <item>Inverse Only</item>
+        <item>Inverse Autodetect</item>
+    </string-array>
+    <string-array name="pref_Data_Matrix_Inverse_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_Aztec_Inverse_titles">
+        <item>Regular Only</item>
+        <item>Inverse Only</item>
+        <item>Inverse Autodetect</item>
+    </string-array>
+    <string-array name="pref_Aztec_Inverse_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_Han_Xin_Inverse_titles">
+        <item>Regular Only</item>
+        <item>Inverse Only</item>
+        <item>Inverse Autodetect</item>
+    </string-array>
+    <string-array name="pref_Han_Xin_Inverse_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_encoding_titles">
+        <item>UTF-8</item>
+        <item>GBK</item>
+        <item>BIG5</item>
+        <item>Shift_JIS</item>
+    </string-array>
+    <string-array name="pref_encoding_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_led_titles">
+        <item>No LED</item>
+        <item>Red LED</item>
+        <item>Green LED</item>
+        <item>Blue LED</item>
+    </string-array>
+    <string-array name="pref_led_values">
+        <item>none</item>
+        <item>red</item>
+        <item>green</item>
+        <item>blue</item>
+    </string-array>
+
+    <string-array name="pref_vibrator_titles">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+    <string-array name="pref_vibrator_values">
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+
+    <string-array name="pref_beeper_time_titles">
+        <item>No</item>
+        <item>1 time</item>
+        <item>2 times</item>
+        <item>3 times</item>
+    </string-array>
+    <string-array name="pref_beeper_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_msi_check_digit_titles">
+        <item>One MSI Check Digit</item>
+        <item>Two MSI Check Digits</item>
+    </string-array>
+    <string-array name="pref_msi_check_digit_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_bt_signal_checking_level_titles">
+        <item>Normal Level</item>
+        <item>Higher Level</item>
+    </string-array>
+    <string-array name="pref_bt_signal_checking_level_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_setting_data_terminator_titles">
+        <item>None/Null</item>
+        <item>CR</item>
+        <item>LF</item>
+        <item>CRLF</item>
+        <item>TAB</item>
+    </string-array>
+    <string-array name="pref_setting_data_terminator_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="pref_setting_terminator_titles">
+        <item>None/Null</item>
+        <item>CR</item>
+        <item>LF</item>
+        <item>CRLF</item>
+        <item>TAB</item>
+    </string-array>
+    <string-array name="pref_setting_terminator_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="pref_scanned_data_format_titles">
+        <item>Raw(without code type)</item>
+        <item>SSI(with code type)</item>
+    </string-array>
+    <string-array name="pref_scanned_data_format_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+    <string-array name="pref_security_level_titles">
+        <item>Weak</item>
+        <item>Moderately Strong</item>
+        <item>Strong</item>
+        <item>Very Strong</item>
+    </string-array>
+    <string-array name="pref_security_level_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_exposure_mode_titles">
+        <item>Auto</item>
+        <item>Fixed</item>
+    </string-array>
+    <string-array name="pref_exposure_mode_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="pref_output_method_titles">
+        <item>Copy/Paste</item>
+        <item>Key Emulator</item>
+    </string-array>
+    <string-array name="pref_output_method_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_sound_freq_titles">
+        <item>Base</item>
+        <item>Normal</item>
+        <item>Sharp</item>
+    </string-array>
+    <string-array name="pref_sound_freq_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_sound_duration_titles">
+        <item>Short</item>
+        <item>Medium</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="pref_sound_duration_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_enable_intent_titles">
+        <item>Integer of Data Type</item>
+        <item>Integer of Data Length</item>
+        <item>Byte Array of Data Byte</item>
+    </string-array>
+    <string-array name="pref_enable_intent_values">
+        <item>Type</item>
+        <item>Length</item>
+        <item>Byte</item>
+    </string-array>
+    <string-array name="pref_enable_intent_defaultValues">
+        <item>Type</item>
+        <item>Length</item>
+    </string-array>
+
+    <string-array name="pref_Decode_Aiming_Pattern_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

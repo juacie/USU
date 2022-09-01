@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:id="@+id/layout_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_scanner_info"
+            android:background="@color/keyboard_press_inside_background"
+            android:visibility="gone" />
+
+        <com.unitech.scanner.utility.keyboard.LatinKeyboardView
+            android:id="@+id/ime_softkeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/keyboard_normal_background"
+            android:keyBackground="@drawable/keyboard_background"
+            android:keyTextColor="@color/keyboard_key_color"
+            android:keyTextSize="@dimen/keyboard_key_text_size" />
+
+        <com.unitech.scanner.utility.keyboard.emoji.EmojiKeyboard
+            android:id="@+id/emojiKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:layout_below="@+id/layout_keyboard"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <RadioButton
+            android:id="@+id/radio_language"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/keytab_language"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radio_qwerty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/keytab_background"
+            android:button="@null"
+            android:text="ABC"
+            android:textAlignment="center"
+            android:textColor="@color/keyboard_tab_color"
+            android:textSize="@dimen/keyboard_tab_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_symbols"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/keytab_background"
+            android:button="@null"
+            android:text="#+="
+            android:textAlignment="center"
+            android:textColor="@color/keyboard_tab_color"
+            android:textSize="@dimen/keyboard_tab_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_numbers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/keytab_background"
+            android:button="@null"
+            android:text="123"
+            android:textAlignment="center"
+            android:textColor="@color/keyboard_tab_color"
+            android:textSize="@dimen/keyboard_tab_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/keytab_scan"
+            android:button="@null"
+            android:textAlignment="center"
+            android:textColor="@color/keyboard_tab_color"
+            android:textSize="@dimen/keyboard_tab_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_hide_keyboard"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/keyboard_hide"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/radio_emoji_keyboard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/emoji_base" />
+    </RadioGroup>
+
+
+</RelativeLayout>

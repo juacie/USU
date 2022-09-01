@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:icon="@drawable/menu_flag"
+        android:title="@string/config_Encoding">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_encoding_titles"
+            android:entryValues="@array/pref_encoding_values"
+            android:key="@string/setting_Encoding"
+            android:summary="%s"
+            android:title="@string/config_Encoding"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:icon="@drawable/menu_flag"
+        android:title="@string/config_DataEditing">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/setting_RemoveNonPrintableChar"
+            android:title="@string/config_RemoveNonPrintableChar" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="@string/setting_UseFormatting"
+            android:title="@string/config_UseFormatting" />
+        <Preference
+            android:defaultValue="{}"
+            android:fragment="com.unitech.scanner.utility.ui.fragment.FormattingTypeFragment"
+            android:key="@string/setting_Formatting"
+            android:title="@string/config_Formatting" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dependency="@string/setting_UseFormatting"
+            android:dialogMessage="@string/config_Prefix_dialog_msg"
+            android:key="@string/setting_Prefix"
+            android:title="@string/config_Prefix" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dependency="@string/setting_UseFormatting"
+            android:dialogMessage="@string/config_Suffix_dialog_msg"
+            android:key="@string/setting_Suffix"
+            android:title="@string/config_Suffix" />
+        <ListPreference
+            android:defaultValue="2"
+            android:dependency="@string/setting_UseFormatting"
+            android:entries="@array/pref_setting_terminator_titles"
+            android:entryValues="@array/pref_setting_terminator_values"
+            android:key="@string/setting_Terminator"
+            android:summary="%s"
+            android:title="@string/config_Terminator"
+            app:useSimpleSummaryProvider="true" />
+        <Preference
+            android:dependency="@string/setting_UseFormatting"
+            android:key="@string/setting_Replace"
+            android:title="@string/config_Replace" />
+    </PreferenceCategory>
+
+
+</androidx.preference.PreferenceScreen>

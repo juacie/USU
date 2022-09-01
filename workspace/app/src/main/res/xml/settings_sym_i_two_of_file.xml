@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="Interleaved 2 of 5"
+        android:title="Interleaved 2 of 5"
+        android:enabled="false"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_I_2_of_5_Check_Digit_Verification_titles"
+        android:entryValues="@array/pref_I_2_of_5_Check_Digit_Verification_values"
+        android:key="I 2 of 5 Check Digit Verification"
+        android:title="I 2 of 5 Check Digit Verification"
+        android:enabled="false"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="Transmit I 2 of 5 Check Digit"
+        android:title="Transmit I 2 of 5 Check Digit"
+        android:enabled="false"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_enable_disable_titles"
+        android:entryValues="@array/pref_enable_disable_values"
+        android:key="Convert I 2 of 5 to EAN-13"
+        android:title="Convert I 2 of 5 to EAN-13"
+        android:enabled="false"
+        android:summary="%s" app:useSimpleSummaryProvider="true"/>
+</androidx.preference.PreferenceScreen>

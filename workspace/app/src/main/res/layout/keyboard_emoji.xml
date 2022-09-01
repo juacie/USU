@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_emoji"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_emojikeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/recycleview_emoji_class"
+            android:overScrollMode="never" />
+        <com.unitech.scanner.utility.keyboard.emoji.EmojiIndicatorLinearLayout
+            android:id="@+id/emojiIndicatorLinearLayout_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/recycleview_emoji_class"
+            android:gravity="center_horizontal" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview_emoji_class"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

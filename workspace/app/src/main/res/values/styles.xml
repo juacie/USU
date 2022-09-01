@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <!-- 有無標題欄 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 對話框的邊框，一般不進行設置 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮現在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 決定背景透明度 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+        <!-- 除去title -->
+        <item name="android:windowNoTitle">false</item>
+        <!-- 對話框是否有遮蓋 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 對話框出現時背景是否變暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景顏色，因為windowBackground中的背景已經寫死了，所以這裡的設置無效 -->
+        <item name="android:colorBackground">#ffffff</item>
+        <!-- 著色緩存（一般不用）-->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!-- 標題的字體樣式 -->
+        <item name="android:windowTitleStyle">@style/RtlOverlay.DialogWindowTitle.AppCompat
+        </item>
+        <item name="android:windowTitleBackgroundStyle">
+            @style/Base.DialogWindowTitleBackground.AppCompat
+        </item>
+        <!--對話框背景(重要)，默認是@drawable/abc_dialog_material_background -->
+        <item name="android:windowBackground">@drawable/abc_dialog_material_background</item>
+        <!-- 動畫 -->
+        <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
+        <!-- 輸入法彈出時自適應 -->
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="windowActionModeOverlay">true</item>
+        <!-- 列表部分的內邊距，作用於單選、多選列表 -->
+        <item name="listPreferredItemPaddingLeft">20dip</item>
+        <item name="listPreferredItemPaddingRight">24dip</item>
+        <item name="android:listDivider">@null</item>
+        <!-- 單選、多選對話框列表區域文字的顏色 默認是@color/abc_primary_text_material_light -->
+        <item name="textColorAlertDialogListItem">@color/unitech_gray</item>
+        <!-- 單選、多選對話框的分割線 -->
+        <!-- dialog中listView的divider 默認是@null -->
+        <item name="listDividerAlertDialog">@null</item>
+        <!-- 單選對話框的按鈕圖標 -->
+        <item name="android:listChoiceIndicatorSingle">@null</item>
+        <!-- 對話框整體的內邊距，不作用於列表部分 默認：@dimen/abc_dialog_padding_material -->
+        <item name="dialogPreferredPadding">40dp</item>
+        <item name="alertDialogCenterButtons">true</item>
+        <!-- 對話框內各個佈局的佈局文件，默認是@style/Base.AlertDialog.AppCompat -->
+        <item name="alertDialogStyle">@style/Base.AlertDialog.AppCompat</item>
+    </style>
+    <!-- parent="@style/Theme.AppCompat.Light.Dialog.Alert" -->
+    <style name="Theme.Dialog.Alert">
+        <item name="windowMinWidthMajor" tools:ignore="PrivateResource">@dimen/abc_dialog_min_width_major</item>
+        <item name="windowMinWidthMinor" tools:ignore="PrivateResource">@dimen/abc_dialog_min_width_minor</item>
+    </style>
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level"   value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+</resources>
